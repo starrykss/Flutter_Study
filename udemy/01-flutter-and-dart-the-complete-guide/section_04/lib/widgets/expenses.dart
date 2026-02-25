@@ -33,6 +33,7 @@ class _ExpensesState extends State<Expenses> {
   // 지출 내역 추가 오버레이 열기
   void _openAddExpenseOverlay() {
     showModalBottomSheet(
+      useSafeArea: true, // SafeArea 사용 (카메라, 노치 제외 영역 설정)
       isScrollControlled: true,
       context: context,
       builder: (ctx) => NewExpense(onAddExpense: _addExpense),
@@ -77,6 +78,10 @@ class _ExpensesState extends State<Expenses> {
 
   @override
   Widget build(BuildContext context) {
+    // 기기 정보 가져오기 (미디어 쿼리 사용)
+    final width = MediaQuery.of(context).size.width;
+    final height = MediaQuery.of(context).size.height;
+
     Widget mainContent = Center(
       child: Text("No expenses found. Start adding some!"),
     );
@@ -101,12 +106,23 @@ class _ExpensesState extends State<Expenses> {
           ),
         ],
       ),
-      body: Column(
-        children: [
-          Chart(expenses: _registeredExpenses),
-          Expanded(child: mainContent),
-        ],
-      ),
+      body: width < 600
+          ? Column(
+              children: [
+                Chart(expenses: _registeredExpenses),
+                Expanded(child: mainContent),
+              ],
+            )
+          : Row(
+              children: [
+                Expanded(
+                  child: Chart(expenses: _registeredExpenses),
+                ),
+                Expanded(
+                  child: mainContent,
+                ),
+              ],
+            ),
     );
   }
 }
