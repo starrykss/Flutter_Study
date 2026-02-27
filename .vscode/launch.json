@@ -1,0 +1,83 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Flutter Android (All Sections)",
+      "request": "launch",
+      "type": "dart",
+      "deviceId": "android"
+    },
+    {
+      "name": "section_01",
+      "cwd": "udemy\\01-flutter-and-dart-the-complete-guide\\section_01",
+      "request": "launch",
+      "type": "dart",
+      "deviceId": "android"
+    },
+    {
+      "name": "section_01 (profile mode)",
+      "cwd": "udemy\\01-flutter-and-dart-the-complete-guide\\section_01",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "profile",
+      "deviceId": "android"
+    },
+    {
+      "name": "section_01 (release mode)",
+      "cwd": "udemy\\01-flutter-and-dart-the-complete-guide\\section_01",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "release",
+      "deviceId": "android"
+    },
+    {
+      "name": "section_02",
+      "cwd": "udemy\\01-flutter-and-dart-the-complete-guide\\section_02",
+      "request": "launch",
+      "type": "dart",
+      "deviceId": "android"
+    },
+    {
+      "name": "section_02 (profile mode)",
+      "cwd": "udemy\\01-flutter-and-dart-the-complete-guide\\section_02",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "profile",
+      "deviceId": "android"
+    },
+    {
+      "name": "section_02 (release mode)",
+      "cwd": "udemy\\01-flutter-and-dart-the-complete-guide\\section_02",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "release",
+      "deviceId": "android"
+    },
+    {
+      "name": "section_03",
+      "cwd": "udemy\\01-flutter-and-dart-the-complete-guide\\section_03",
+      "request": "launch",
+      "type": "dart",
+      "deviceId": "android"
+    },
+    {
+      "name": "section_03 (profile mode)",
+      "cwd": "udemy\\01-flutter-and-dart-the-complete-guide\\section_03",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "profile",
+      "deviceId": "android"
+    },
+    {
+      "name": "section_03 (release mode)",
+      "cwd": "udemy\\01-flutter-and-dart-the-complete-guide\\section_03",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "release",
+      "deviceId": "android"
+    }
+  ]
+}

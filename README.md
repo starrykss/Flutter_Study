@@ -12,10 +12,10 @@
 <table>
     <tr>
         <td>
-          <img src="https://cdn.iconscout.com/icon/free/png-256/free--logo-icon-svg-download-png-2944876.png" width="80" alt="Flutter Logo" title="Flutter"/>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/c/c6/Dart_logo.png" width="80" alt="Dart Logo" title="Dart"/>
         </td>
         <td>
-          <img src="https://upload.wikimedia.org/wikipedia/commons/c/c6/Dart_logo.png" width="80" alt="Dart Logo" title="Dart"/>
+          <img src="https://cdn.iconscout.com/icon/free/png-256/free--logo-icon-svg-download-png-2944876.png" width="80" alt="Flutter Logo" title="Flutter"/>
         </td>
     </tr>
 </table>
