@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "361962358853",
+    "firebase_url": "https://flutter-study-2188c-default-rtdb.firebaseio.com",
+    "project_id": "flutter-study-2188c",
+    "storage_bucket": "flutter-study-2188c.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:361962358853:android:01877bc5adfd9c034cfb2c",
+        "android_client_info": {
+          "package_name": "com.example.section_09"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBbXkPPe2-cWILW9qdtWaJ62OHSmPfffTc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
