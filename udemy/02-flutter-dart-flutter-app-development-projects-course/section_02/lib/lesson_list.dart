@@ -13,7 +13,7 @@ class LessonList extends StatelessWidget {
   Widget build(BuildContext context) {
     List<Lesson> allLessons = DataHelper.allAddedLessons;
 
-    return allLessons.length > 0
+    return allLessons.isNotEmpty
         ? ListView.builder(
             itemCount: allLessons.length,
             itemBuilder: (context, index) {
@@ -29,11 +29,11 @@ class LessonList extends StatelessWidget {
                     child: ListTile(
                       title: Text(allLessons[index].name),
                       leading: CircleAvatar(
+                        foregroundColor: Colors.white,
+                        backgroundColor: Constants.mainColor,
                         child: Text(
                           DataHelper.calculateAverage().toStringAsFixed(2),
                         ),
-                        foregroundColor: Colors.white,
-                        backgroundColor: Constants.mainColor,
                       ),
                       subtitle: Text(
                         'Grade Value: ${allLessons[index].letterGrade}, Credit Value: ${allLessons[index].credit}',
@@ -52,7 +52,6 @@ class LessonList extends StatelessWidget {
               ),
             ),
           );
-    ;
   }
 }
 

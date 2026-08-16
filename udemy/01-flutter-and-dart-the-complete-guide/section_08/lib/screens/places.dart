@@ -17,14 +17,14 @@ class PlacesScreen extends ConsumerStatefulWidget {
 class _PlacesScreenState extends ConsumerState<PlacesScreen> {
   @override
   Widget build(BuildContext context) {
-    late Future<void> _placesFuture;
+    late Future<void> placesFuture;
 
     // 상태값 초기화
     @override
     void initState() {
       super.initState();
 
-      _placesFuture = ref.read(userPlacesProvider.notifier).loadPlaces();
+      placesFuture = ref.read(userPlacesProvider.notifier).loadPlaces();
     }
 
     // 전역 스토어 값 가져오기
@@ -49,7 +49,7 @@ class _PlacesScreenState extends ConsumerState<PlacesScreen> {
       body: Padding(
         padding: const EdgeInsets.all(8.0),
         child: FutureBuilder(
-          future: _placesFuture,
+          future: placesFuture,
           builder: (context, snapshot) =>
               snapshot.connectionState == ConnectionState.waiting
               ? const Center(child: CircularProgressIndicator())

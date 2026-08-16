@@ -21,7 +21,7 @@ class _BookDetailState extends State<BookDetail> {
     super.initState();
 
     // 앱바 색상 찾기
-    WidgetsBinding.instance!.addPostFrameCallback(
+    WidgetsBinding.instance.addPostFrameCallback(
       (_) => findAppBarColor(),
     );
   }
@@ -35,14 +35,12 @@ class _BookDetailState extends State<BookDetail> {
             expandedHeight: 250,
             pinned: true,
             title: Text(
-              widget.selectedBook.bookName +
-                  ' ' +
-                  widget.selectedBook.bookAuthor,
+              '${widget.selectedBook.bookName} ${widget.selectedBook.bookAuthor}',
             ),
             backgroundColor: appBarColor,
             flexibleSpace: FlexibleSpaceBar(
               background: Image.asset(
-                'assets/images/' + widget.selectedBook.bigImage,
+                'assets/images/${widget.selectedBook.bigImage}',
                 fit: BoxFit.cover,
               ),
             ),
@@ -63,7 +61,7 @@ class _BookDetailState extends State<BookDetail> {
   // 앱바 색상 찾기 (비동기 처리)
   void findAppBarColor() async {
     generator = await PaletteGeneratorMaster.fromImageProvider(
-      AssetImage('assets/images/' + widget.selectedBook.bigImage),
+      AssetImage('assets/images/${widget.selectedBook.bigImage}'),
     );
     appBarColor = generator.dominantColor!.color;
 

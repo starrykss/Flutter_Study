@@ -23,7 +23,7 @@ class ShowAverage extends StatelessWidget {
           style: Constants.lessonStyle,
         ),
         Text(
-          average >= 0 ? '${average.toStringAsFixed(2)}' : '0.0',
+          average >= 0 ? average.toStringAsFixed(2) : '0.0',
           style: Constants.averageStyle,
         ),
         Text(

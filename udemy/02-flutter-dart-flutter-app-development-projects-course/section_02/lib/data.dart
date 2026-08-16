@@ -45,8 +45,8 @@ class DataHelper {
     return letterGrade
         .map(
           (e) => DropdownMenuItem(
-            child: Text(e),
             value: numberGrade(e),
+            child: Text(e),
           ),
         )
         .toList();
@@ -60,27 +60,27 @@ class DataHelper {
     return allCredits()
         .map(
           (e) => DropdownMenuItem(
-            child: Text(e.toString()),
             value: e.toDouble(),
+            child: Text(e.toString()),
           ),
         )
         .toList();
   }
 
   // 수업 아이템 추가 처리
-  static addLesson(Lesson lesson) {
+  static void addLesson(Lesson lesson) {
     allAddedLessons.add(lesson);
   }
 
   // 평균값 구하기
-  static calculateAverage() {
+  static double calculateAverage() {
     double totalGrade = 0;
     double totalCredit = 0;
 
-    allAddedLessons.forEach((element) {
+    for (var element in allAddedLessons) {
       totalGrade = totalGrade + (element.credit * element.letterGrade);
       totalCredit = totalCredit + element.credit;
-    });
+    }
 
     return totalGrade / totalCredit;
   }

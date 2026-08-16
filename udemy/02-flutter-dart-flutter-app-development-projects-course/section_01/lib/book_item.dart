@@ -38,7 +38,7 @@ class BookItem extends StatelessWidget {
           },
           // 앞부분 이미지
           leading: Image.asset(
-            'assets/images/' + listedBook.smallImage,
+            'assets/images/${listedBook.smallImage}',
             width: 75,
             height: 75,
           ),

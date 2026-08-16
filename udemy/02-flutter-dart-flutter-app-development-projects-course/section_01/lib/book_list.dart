@@ -5,7 +5,7 @@ import 'package:section_01/data/listData.dart';
 import 'package:section_01/model/book.dart';
 
 class BookList extends StatelessWidget {
-  BookList() {
+  BookList({super.key}) {
     allBooks = preparedData();
   }
 

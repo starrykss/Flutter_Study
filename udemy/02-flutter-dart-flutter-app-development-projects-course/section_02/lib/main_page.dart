@@ -135,7 +135,7 @@ class _MyWidgetState extends State<MainPage> {
         });
       },
       validator: (value) {
-        if (value!.length <= 0) {
+        if (value!.isEmpty) {
           return 'Please Enter a Lesson';
         } else {
           return null;
